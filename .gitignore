@@ -36,3 +36,14 @@ Thumbs.db
 
 # TypeScript
 *.tsbuildinfo
+
+# Cloud development local artifacts
+.venv/
+node_modules/
+__pycache__/
+.dart_tool/
+.wrangler/
+.cloud-artifacts/
+.env
+.env.*
+!.env.example

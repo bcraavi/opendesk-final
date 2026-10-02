@@ -1,0 +1,21 @@
+{
+  "name": "Cloud development: Opendesk",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "remoteUser": "node",
+  "postCreateCommand": "bash .codex/setup.sh",
+  "forwardPorts": [
+    3000,
+    8080,
+    5173
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
