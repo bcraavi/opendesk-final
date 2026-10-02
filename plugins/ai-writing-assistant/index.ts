@@ -3,7 +3,7 @@
  * Provides base AI actions: improve, summarize, expand, simplify, etc.
  */
 
-import type { OpenDeskPlugin } from "../../engine/plugins/types";
+import type { OpenDeskPlugin } from "../../engine/src/plugins/types";
 
 const ACTIONS = [
   { id: "improve", label: "Improve Writing", icon: "✨", prompt: "Improve the writing quality, grammar, clarity, and flow. Return only the improved text." },

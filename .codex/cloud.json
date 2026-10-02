@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "name": "Opendesk",
+  "container": ".devcontainer/devcontainer.json",
+  "runtime": "node22",
+  "install": "bash .codex/setup.sh",
+  "check": "bash .codex/check.sh",
+  "start": null,
+  "test_scope": "source/configuration checks; no isolated application suite",
+  "limitations": [
+    "Marketplace Python source is checked without starting the server. Native macOS application, Screen Recording and Accessibility permissions require a Mac. Chrome extension interaction requires browser validation."
+  ],
+  "required_network_domains": [
+    "registry.npmjs.org"
+  ]
+}
