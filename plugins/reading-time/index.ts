@@ -3,7 +3,7 @@
  * Shows estimated reading time in the toolbar.
  */
 
-import type { OpenDeskPlugin } from "../../engine/plugins/types";
+import type { OpenDeskPlugin } from "../../engine/src/plugins/types";
 
 const plugin: OpenDeskPlugin = {
   name: "reading-time",

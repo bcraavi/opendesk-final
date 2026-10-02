@@ -14,8 +14,7 @@ cloud_run() {
   printf "%s\n" "Running: $1"
   if bash -c "$1"; then return 0; else cloud_status=1; fi
 }
-cloud_run '(cd engine && npm run typecheck && npm run build)'
+cloud_run '(cd engine && npm run typecheck && npm run build && npm test)'
 cloud_run '(cd opendesk-ext && npm run build)'
 cloud_run '(cd apps/web && npm run build)'
-printf "%s\n" "No isolated application test suite is configured for this snapshot; see CLOUD_DEVELOPMENT.md."
 exit "$cloud_status"

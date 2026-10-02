@@ -42,12 +42,12 @@ health records, model weights, or private SSH keys into images.
 
 Configured checks:
 
-- `(cd engine && npm run typecheck && npm run build)`
+- `(cd engine && npm run typecheck && npm run build && npm test)`
 - `(cd opendesk-ext && npm run build)`
 - `(cd apps/web && npm run build)`
 - `.codex/verify.py`: offline Python AST, shell, JSON, JavaScript syntax and Apple XML configuration checks. This is a smoke check, not an application test.
 
-Application test scope: No isolated application test suite is present/configured in this snapshot.
+Application test scope: built-engine formatting/serialization and idempotent initialization with synthetic content in jsdom. Browser extension integration and marketplace behavior require separate tests.
 
 - Marketplace Python source is checked without starting the server. Native macOS application, Screen Recording and Accessibility permissions require a Mac. Chrome extension interaction requires browser validation.
 

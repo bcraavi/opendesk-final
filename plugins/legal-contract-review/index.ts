@@ -12,7 +12,7 @@
  * - Export to redlined DOCX
  */
 
-import type { OpenDeskPlugin } from "../../engine/plugins/types";
+import type { OpenDeskPlugin } from "../../engine/src/plugins/types";
 
 const RISKY_PATTERNS = [
   { pattern: /indemnif/i, risk: "high", label: "Indemnification clause" },
