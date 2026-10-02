@@ -6,9 +6,9 @@
   "install": "bash .codex/setup.sh",
   "check": "bash .codex/check.sh",
   "start": null,
-  "test_scope": "source/configuration checks; no isolated application suite",
+  "test_scope": "Engine typecheck/build and formatting/serialization regression test, browser extension build and Next.js production build passed.",
   "limitations": [
-    "Marketplace Python source is checked without starting the server. Native macOS application, Screen Recording and Accessibility permissions require a Mac. Chrome extension interaction requires browser validation."
+    "Browser extension interaction and marketplace integration remain separate."
   ],
   "required_network_domains": [
     "registry.npmjs.org"
